@@ -1,0 +1,21 @@
+body{
+    font-family: arial sans-serif;
+    color: #2a6496;
+}
+.giveMargin {
+    margin-right: 500px;
+    margin-left: 500px
+}
+
+.welcomeNote {
+    margin-top: 300px;
+}
+
+.error_message {
+    color: red;
+    border-color: red;
+    margin-bottom: 10px;
+}
+textarea.ng-dirty {
+    border-color: red;
+}

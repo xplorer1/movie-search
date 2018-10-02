@@ -1,0 +1,27 @@
+{
+  "name": "MovieFinder",
+  "short_name": "MovieFinder",
+  "start_url": "http://localhost:8080/index.html#!/landingPage",
+  "display": "Fullscreen",
+  "theme_color": "#A52A2A",
+  "background_color": "#A52A2A",
+  "description": "A simple Movie Finder App.",
+  "icons": [
+    {
+      "src": "images/mf.png",
+      "sizes": "67x82",
+      "type": "image/png"
+    }, {
+      "src": "images/video.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/cinema.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "prefer_related_applications": false,
+  "orientation": "portrait"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainModule">
+
+<head>
+    <title>P W A</title>
+
+    <!-- meta stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="theme-color" content='#000'>
+
+    <!--css files -->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/app.css">
+	
+	<link rel="manifest" href="manifest.json">
+
+    </head>
+
+    <body>
+        <article>
+            <div class="w3-container w3-bar w3-brown">
+                <span class="w3-center w3-text-center w3-bar-item">The Movie Finder</span>
+            </div>
+
+            <ui-view>
+                <section class="w3-margin w3-container">
+                    <div class="w3-center w3-text-black welcomeNote">
+                        <p>Here, you select from a range of category and find movies based on that category.</p>
+                        <h1>Or...</h1>
+                        <p>You can search for movies based on name, ratings, certifications or release dates.</p>
+
+                        <button ui-sref="landingPage" class="w3-padding-large w3-button w3-brown w3-large w3-round-large w3-hover-shadow">Get Started
+                        </button>
+                        <hr class="giveMargin">
+                    </div>
+                </section>
+            </ui-view>
+        </article>
+
+
+        <!-- angular libraries -->
+    <script defer src="lib/angular/angular.js"></script>
+    <script defer src="lib/angular/angular-ui-router.js"></script>
+
+    <script defer src='lib/lovefield.js'></script>
+
+    <!-- custom scripts -->
+    <script defer src="js/app.js"></script>
+    <script defer src="js/controllers.js"></script>
+    </body>
+</html>

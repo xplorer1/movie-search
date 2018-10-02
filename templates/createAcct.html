@@ -1,0 +1,16 @@
+<form name='signUpForm' novalidate>
+    Email
+    <input type="email" name="email" class="w3-input w3-round w3-border" ng-model="email" placeholder='Enter Email' ng-required='true'>
+    <span class='error_message' ng-show='signUpForm.submitted && signUpForm.email.$error.required'> * Required.</span>
+    <span class='error_message' ng-show='signUpForm.submitted && signUpForm.email.$error.email'>Oops! That is not a valid email.</span>
+    <br>
+
+    Confirm Password
+    <input type='password' name='confirmPassword' class="w3-input w3-round w3-border" placeholder='Enter Password Again' ng-model='confirmPassword' ng-required='true' ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/">
+    <span class='error_message' ng-show='signUpForm.submitted && signUpForm.confirmPassword.$error.required'> * Required.</span>
+    <br>
+</form>
+
+<div class="box continueButtons w3-center">
+    <button class="w3-padding-large w3-button w3-red w3-large w3-round-large w3-hover-shadow" ng-click="register()">Register</button>
+</div>

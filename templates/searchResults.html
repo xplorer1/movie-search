@@ -1,0 +1,17 @@
+<article>
+    <div class="w3-container w3-center" style='width:100%'>
+        <h3 class="w3-border-bottom w3-border-brown">Search Result...</h3>
+
+        <div class="w3-row w3-margin">
+            <div class="w3-center w3-margin">
+                <div class="w3-card-4 w3-margin" style='width:100%' ng-repeat="result in searchResults">
+                    <img src = 'https://image.tmdb.org/t/p/w300//{{result.backdrop_path}}' height="350" width="350" class="w3-margin">
+                    <div class="w3-container w3-center">
+                        <h3>{{result.title}}</h3>
+                        <p>Release Date: {{result.release_date}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
